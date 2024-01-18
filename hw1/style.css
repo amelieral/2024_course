@@ -80,7 +80,7 @@
   }
 
   .game__card:hover {
-    border: 3px solid #44d2ff;
+    border: 3px solid white;
     border-radius: 18px;
   }
   
