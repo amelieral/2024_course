@@ -9,8 +9,8 @@ let yearIphone = 2007;
 alert(`Год выпуска первого iPhone ${yearIphone}`);
 
 /*Задание 3*/
-let JavaScriptAuthor = "Брендан Эйх";
-alert(`Создатель языка JavaScript ${JavaScriptAuthor}`);
+let javaScriptAuthor = "Брендан Эйх";
+alert(`Создатель языка JavaScript ${javaScriptAuthor}`);
 
 /*Задание 4*/
 let b = 10;
@@ -47,9 +47,9 @@ let user = {
 	age: 30,
 	isAdmin: true
 };
-user.cityOfResidence = 'Berlin';
+user["city of residence"] = 'Berlin';
 user.age = 32;
-delete user.cityOfResidence;
+delete user["city of residence"];
 let info = prompt("Какую информацию хотите узнать о пользователе?");
 alert(user[info]);
 
