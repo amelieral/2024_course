@@ -1,16 +1,13 @@
 @keyframes bounce {
     0%, 20%, 60%, 100% {
         transform: translateY(0);
-        transform: translateY(0);
     }
 
     40% {
         transform: translateY(-20px);
-        transform: translateY(-20px);
     }
 
     80% {
-        transform: translateY(-10px);
         transform: translateY(-10px);
     }
 }
@@ -25,8 +22,7 @@ a {
 }
 
 .center {
-    padding-left: calc(50% - 600px);
-    padding-right: calc(50% - 600px);
+    padding-inline: max(50% - 600px, 16px);
 }
 
 body {
@@ -48,13 +44,15 @@ span {
 }
 
 .header__text {
+    max-width: 705px;
     padding-top: 217.1px;
     color: #FFF;
     font-size: 64px;
     font-weight: 700;
 }
 
-.header__discription {
+.header__description {
+    max-width: 510px;
     padding-top: 32px;
     color: #FFF;
     font-size: 18px;
@@ -140,7 +138,7 @@ button:hover {
         text-align: center;
     }
 
-    .header__discription {
+    .header__description {
         text-align: center;
         font-size: 14px;
         line-height: 22px;
