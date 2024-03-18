@@ -12,7 +12,7 @@ console.log(result);
 let d = 110;
 let e = 80;
 let result2 = d > 100 || e > 100 ? 'Верно' : 'Неверно';
-console.log(result);
+console.log(result2);
 
 /* задание 4 */
 let a = '2';
@@ -48,12 +48,16 @@ switch (monthNumber) {
 }
 
 /* задание 7 */
-let anyNumber = prompt('Пожалуйста, введите любое число');
+let anyNumber = prompt('Пожалуйста, введите любое число').trim();
 
-if (anyNumber.trim() === '' || isNaN(anyNumber)) {
-    alert('Это не число');
+if (anyNumber === '') {
+    alert('Это пустая строка или пробелы');
 } else {
-    if (anyNumber % 2 === 0) {
+    anyNumber = Number(anyNumber)
+
+    if (isNaN(anyNumber)) {
+        alert('Это не число');
+    } else if (anyNumber % 2 === 0) {
         alert('Число четное');
     } else {
         alert('Число нечетное');
