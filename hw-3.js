@@ -49,7 +49,8 @@ switch (monthNumber) {
 
 /* задание 7 */
 let anyNumber = prompt('Пожалуйста, введите любое число');
-if (isNaN(anyNumber)) {
+
+if (anyNumber.trim() === '' || isNaN(anyNumber)) {
     alert('Это не число');
 } else {
     if (anyNumber % 2 === 0) {
@@ -61,18 +62,26 @@ if (isNaN(anyNumber)) {
 
 /* задание 8 */
 let clientOS = 1;
-let messageOS;
-messageOS = (clientOS === 0) ? console.log ('Установите версию приложения для iOS по ссылке') : console.log ('Установите версию приложения для Android по ссылке');
+
+if (clientOS === 0)
+    console.log('Установите версию приложения для iOS по ссылке');
+else
+    console.log('Установите версию приложения для Android по ссылке');
 
 /* задание 9 */
 let clientOS2 = 1;
 let deviceYear = 2010;
-if (clientOS2 === 0 && deviceYear < 2015) {
-    console.log('Установите облегченную версию приложения для iOS по ссылке');
-} else if (clientOS2 === 0 && deviceYear > 2015) {
-    console.log('Установите версию приложения для iOS по ссылке');
-} else if (clientOS2 === 1 && deviceYear < 2015) {
-    console.log('Установите облегченную версию приложения для Android по ссылке');
+
+if (clientOS2 === 0) {
+    if (deviceYear < 2015) {
+        console.log('Установите облегченную версию приложения для iOS по ссылке');
+    } else {
+        console.log('Установите версию приложения для iOS по ссылке');
+    }
 } else {
-    console.log('Установите версию приложения для Android по ссылке');
+    if (deviceYear < 2015) {
+        console.log('Установите облегченную версию приложения для Android по ссылке');
+    } else {
+        console.log('Установите версию приложения для Android по ссылке');
+    }
 }
