@@ -1,73 +1,71 @@
 @keyframes bounce {
-	0%, 20%, 60%, 100% {
-		transform: translateY(0);
-		transform: translateY(0);
-	}
+    0%, 20%, 60%, 100% {
+        transform: translateY(0);
+    }
 
-	40% {
-		transform: translateY(-20px);
-		transform: translateY(-20px);
-	}
+    40% {
+        transform: translateY(-20px);
+    }
 
-	80% {
-		transform: translateY(-10px);
-		transform: translateY(-10px);
-	}
+    80% {
+        transform: translateY(-10px);
+    }
 }
 
 * {
     margin: 0;
     padding: 0;
-  }
-  
-  a {
+}
+
+a {
     text-decoration: none;
-  }
+}
 
-  .center {
-    padding-left: calc(50% - 600px);
-    padding-right: calc(50% - 600px);
-  }
+.center {
+    padding-inline: max(50% - 600px, 16px);
+}
 
-  body {
+body {
     font-family: "Montserrat", sans-serif;
-  }
+}
 
-  span {
+span {
     color: #FFF;
     font-size: 18px;
     font-weight: 700;
     line-height: 32px;
-  }
+}
 
-  .top {
+.top {
     background-image: url(img/header.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-  }
+}
 
-  .header__text {
+.header__text {
+    max-width: 705px;
     padding-top: 217.1px;
     color: #FFF;
     font-size: 64px;
     font-weight: 700;
-  }
+}
 
-  .header__discription {
+.header__description {
+    max-width: 510px;
     padding-top: 32px;
     color: #FFF;
     font-size: 18px;
     font-weight: 300;
     line-height: 32px;
-  }
+}
 
-  .header__button {
+.header__button {
     padding-top: 44px;
     padding-bottom: 493.29px;
-  }
+}
 
-  button {
+button {
     border: 0;
     border-radius: 30px;
     background: #9C0332;
@@ -76,46 +74,46 @@
     color: #FFF;
     font-size: 18px;
     font-weight: 400;
-    transition: all 500ms ease; 
-  }
+    transition: all 500ms ease;
+}
 
-  button:hover {
+button:hover {
     background: #EB443F;
     animation: bounce 1s;
     cursor: pointer
-  }
+}
 
-  .game {
+.game {
     background: #000915;
-  }
+}
 
-  .game__box {
+.game__box {
     padding-top: 128px;
     padding-bottom: 128px;
     display: flex;
     justify-content: center;
     gap: 32px;
-  }
+}
 
-  .game_card {
+.game_card {
     position: relative;
     transition: .3s;
     box-sizing: border-box;
-  }
+}
 
-  .game_card:hover {
+.game_card:hover {
     outline: 3px solid #44D2FF;
     border-radius: 18px;
     cursor: pointer;
-  }
-  
-  .game_image {
+}
+
+.game_image {
     border-radius: 18px;
     width: 100%;
     height: 100%;
-  }
+}
 
-  .game_link {
+.game_link {
     color: #FFF;
     font-size: 24px;
     font-weight: 600;
@@ -123,55 +121,55 @@
     position: absolute;
     left: 32px;
     bottom: 32px;
-  }
+}
 
-  @media (max-width: 767px) {
+@media (max-width: 767px) {
     .center {
-      padding-left: 16px;
-      padding-right: 16px;
-      display: flex;
-      justify-content: center;
-  }
-
-    .header__text {
-      padding-top: 238.69px;
-      font-size: 32px;
-      line-height: 39px;
-      text-align: center;
+        padding-left: 16px;
+        padding-right: 16px;
+        display: flex;
+        justify-content: center;
     }
 
-    .header__discription {
-      text-align: center;
-      font-size: 14px;
-      line-height: 22px;
+    .header__text {
+        padding-top: 238.69px;
+        font-size: 32px;
+        line-height: 39px;
+        text-align: center;
+    }
+
+    .header__description {
+        text-align: center;
+        font-size: 14px;
+        line-height: 22px;
     }
 
     br {
-      display: none;
+        display: none;
     }
 
     span {
-      color: #FFF;
-      font-size: 14px;
-      font-weight: 700;
-      line-height: 22px;
+        color: #FFF;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 22px;
     }
 
     .header__button {
-      font-size: 16px;
-      display: flex;
-      justify-content: center;
-      padding-bottom: 238.69px;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 238.69px;
     }
 
     .game__box {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .game_image {
-      width:  343px;
-      height: 300px;
+        width: 343px;
+        height: 300px;
     }
-  }
+}
